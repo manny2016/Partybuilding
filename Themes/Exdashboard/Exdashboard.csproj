@@ -204,6 +204,8 @@
     <Content Include="Views\Content.cshtml" />
     <Content Include="Views\Widget-MenuWidget.cshtml" />
     <Content Include="Views\Parts\MenuWidget.cshtml" />
+    <Content Include="Views\Layout_Industry.cshtml" />
+    <Content Include="Views\Layout_Partbuilding.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Orchard.Core">
@@ -281,7 +283,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Filters\LayoutFilter.cs" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

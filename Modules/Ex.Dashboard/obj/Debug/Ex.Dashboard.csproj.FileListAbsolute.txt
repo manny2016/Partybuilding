@@ -1,0 +1,7 @@
+D:\Manny\local\Partybuilding\Modules\Ex.Dashboard\bin\Ex.Dashboard.dll.config
+D:\Manny\local\Partybuilding\Modules\Ex.Dashboard\bin\Ex.Dashboard.dll
+D:\Manny\local\Partybuilding\Modules\Ex.Dashboard\bin\Ex.Dashboard.pdb
+D:\Manny\local\Partybuilding\Modules\Ex.Dashboard\obj\Debug\Ex.Dashboard.csprojResolveAssemblyReference.cache
+D:\Manny\local\Partybuilding\Modules\Ex.Dashboard\obj\Debug\Ex.Dashboard.csproj.CoreCompileInputs.cache
+D:\Manny\local\Partybuilding\Modules\Ex.Dashboard\obj\Debug\Ex.Dashboard.dll
+D:\Manny\local\Partybuilding\Modules\Ex.Dashboard\obj\Debug\Ex.Dashboard.pdb
