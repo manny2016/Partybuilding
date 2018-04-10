@@ -1,0 +1,71 @@
+﻿@using Orchard.UI.Resources;
+@using Orchard.Utility.Extensions
+@using Orchard.ContentManagement
+@{
+    Func<dynamic, dynamic> Zone = x => Display(x); // Zone as an alias for Display to help make it obvious when we're displaying zones
+    SetMeta(httpEquiv: "X-UA-Compatible", content: "IE=edge");
+    SetMeta(charset: "utf-8");
+    SetMeta("viewport", "width=device-width, initial-scale=1");
+    Style.Include("../Assets/vendor/bootstrap/css/bootstrap.min.css");
+    Style.Include("../Assets/vendor/metisMenu/metisMenu.min.css");
+    Style.Include("../Assets/dist/css/sb-admin-2.css");
+    Style.Include("../Assets/vendor/morrisjs/morris.css");
+    Style.Include("../Assets/vendor/font-awesome/css/font-awesome.min.css");
+    <!-- Custom CSS -->
+
+    Style.Include("../vendor/font-awesome/css/font-awesome.min.css");
+    <!-- Morris Charts CSS -->
+
+}
+<div id="wrapper">
+    @if (Model.Header != null)
+    {
+        <header id="layout-header" class="group">
+            <div id="header">
+                @Zone(Model.Header)
+            </div>
+        </header>
+    }
+
+
+    @if (Model.Navigation != null)
+    {
+        <div id="layout-navigation" class="group">
+            @Zone(Model.Navigation)
+        </div>
+    }
+
+
+    @if (Model.Content != null)
+    {
+        <div id="layout-content" class="group">
+            @Zone(Model.Content)
+        </div>
+    }
+    @if (Model.Footer != null)
+    {
+        <div id="footer" role="contentinfo">
+            @Zone(Model.Footer)
+        </div>
+    }
+</div>
+@using (Script.Foot())
+{
+
+    Script.Include("../Assets/vendor/jquery/jquery.min.js");
+    Script.Include("../Assets/vendor/bootstrap/js/bootstrap.min.js");
+
+    Script.Include("../Assets/vendor/metisMenu/metisMenu.min.js");
+    <!-- Bootstrap Core JavaScript -->
+
+
+    <!-- Metis Menu Plugin JavaScript -->
+    Script.Include("../Assets/vendor/raphael/raphael.min.js");
+
+    <!-- Morris Charts JavaScript -->
+    Script.Include("../Assets/vendor/morrisjs/morris.min.js");
+    Script.Include("../Assets/data/morris-data.js");
+    Script.Include("../Assets/dist/js/sb-admin-2.js");
+
+}
+

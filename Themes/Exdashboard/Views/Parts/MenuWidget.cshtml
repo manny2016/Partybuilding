@@ -1,0 +1,31 @@
+﻿<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+        <ul class="nav" id="side-menu">
+            @foreach (var menu in Model.Menu.Items)
+            {
+                if (menu.Items == null || menu.Items.Count == 0)
+                {
+                    <li>
+
+                        <a href="@menu.Href"><i class="fa fa-dashboard fa-fw"></i>@menu.Text</a>
+                    </li>
+
+                }
+                else
+                {
+                    <li>
+                        <a href="#"><i class="fa fa-table fa-fw"></i>@menu.Text <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            @foreach (var subMenu in menu.Items)
+                            {
+                                <li>
+                                    <a href="@subMenu.Href">@subMenu.Item</a>
+                                </li>
+                            }
+                        </ul>
+                    </li>
+                }
+            }
+        </ul>
+    </div>
+</div>
