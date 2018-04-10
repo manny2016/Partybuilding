@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exdashboard", "Themes\Exdashboard\Exdashboard.csproj", "{F84BC8D8-5BD7-4473-B98F-7221A5C4B5BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex.Dashboard", "Modules\Ex.Dashboard\Ex.Dashboard.csproj", "{6045A55B-E756-484F-9036-4EB12D69959C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F84BC8D8-5BD7-4473-B98F-7221A5C4B5BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F84BC8D8-5BD7-4473-B98F-7221A5C4B5BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F84BC8D8-5BD7-4473-B98F-7221A5C4B5BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6045A55B-E756-484F-9036-4EB12D69959C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6045A55B-E756-484F-9036-4EB12D69959C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6045A55B-E756-484F-9036-4EB12D69959C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6045A55B-E756-484F-9036-4EB12D69959C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
