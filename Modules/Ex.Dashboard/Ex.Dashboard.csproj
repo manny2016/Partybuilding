@@ -70,6 +70,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   
